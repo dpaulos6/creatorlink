@@ -1,88 +1,15 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Code } from 'lucide-react'
+import { Hero } from '@/sections/hero'
+import { HowItWorks } from '@/sections/how-it-works'
+import { InteractiveJson } from '@/sections/interactive-json'
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="flex-1 flex flex-col gap-24 border-x container px-6">
-    <section class="w-full flex flex-col gap-4 items-center text-center container py-12 md:py-24 mt-24">
-      <span class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-        Creator Usernames
-        <span class="text-accent"> JSON API</span>
-      </span>
-      <span class="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-        CreatorLink provides a powerful JSON dataset for game developers and app creators to manage and reserve usernames across multiple platforms.
-      </span>
-      <div class="space-x-4">
-        <Button>Get API Key</Button>
-        <Button variant="outline">View Docs</Button>
-      </div>
-    </section>
-    <section class="w-full flex flex-col gap-4 items-center text-center container py-12 md:py-24">
-      <div class="w-full flex flex-col gap-4 items-center bg-primary/5 py-24 rounded-xl">
-        <div class="flex flex-col items-center justify-center space-y-4 text-center">
-          <div class="space-y-2">
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-accent">How It Works</h2>
-            <p class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Integrate our JSON API to seamlessly manage creator usernames across your platforms.
-            </p>
-          </div>
-        </div>
-        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <div class="flex flex-col justify-center space-y-4">
-            <ul class="grid gap-6">
-              <li>
-                <div class="grid gap-1">
-                  <h3 class="text-xl font-bold">JSON-Powered API</h3>
-                  <p class="text-foreground/70">
-                    Access and manage creator data with our easy-to-use JSON format, perfect for integration into your existing systems.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="grid gap-1">
-                  <h3 class="text-xl font-bold">Cross-Platform Compatibility</h3>
-                  <p class="text-foreground/70">
-                    Ensure consistency of creator identities across various games and applications with a single API call.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="grid gap-1">
-                  <h3 class="text-xl font-bold">Real-time Updates</h3>
-                  <p class="text-foreground/70">
-                    Get instant updates on username availability and reservations across your connected platforms.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="flex items-center justify-center">
-            <div class="rounded-xl border bg-popover shadow-sm">
-              <div class="p-4 md:p-6 space-y-4">
-                <div class="flex items-center space-x-4">
-                  <div class="rounded-full bg-secondary/10 p-2">
-                    <Code class="h-6 w-6 text-secondary" />
-                  </div>
-                  <div class="space-y-1">
-                    <p class="text-sm font-medium leading-none">API Request Example</p>
-                    <p class="text-sm">Check username availability</p>
-                  </div>
-                </div>
-                <div class="space-y-2">
-                  <code class="relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm text-secondary">
-                    GET /api/v1/username/check
-                  </code>
-                  <Input placeholder='{"username": "creator123"}' class="font-mono text-sm" />
-                  <Button class="w-full">Send Request</Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="h-40 w-full"/>
+    <Hero/>
+    <HowItWorks />
+    <InteractiveJson />
   </main>
 </Layout>
