@@ -9,7 +9,7 @@ export const HowItWorks = ({ ...props }: HowItWorksProps) => {
       className="w-full flex flex-col gap-4 items-center container my-20"
       {...props}
     >
-      <div className="bg-primary/5 dark:bg-primary/10 py-16 px-4 w-full rounded-2xl">
+      <div className="bg-primary/5 dark:bg-primary/10 py-24 px-4 w-full rounded-2xl">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-primary mb-4">
             How It Works

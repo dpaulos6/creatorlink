@@ -1,9 +1,17 @@
-export const example = {
+import type { Person } from '@/types'
+
+/**
+ * An example object containing information about a person and their social media accounts.
+ *
+ * @type {{ papaplatte: Person }}
+ */
+export const example: { papaplatte: Person } = {
   papaplatte: {
     name: 'Papaplatte',
     steam: {
       id: '76561198013760707',
-      name: 'lattensepp'
+      name: 'lattensepp',
+      partner: false
     },
     discord: {
       id: '169926504657059840',

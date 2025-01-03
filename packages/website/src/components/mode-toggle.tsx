@@ -1,9 +1,7 @@
 import * as React from 'react'
 import { Moon, Sun } from 'lucide-react'
 
-import { Button, type ButtonProps } from '@/components/ui/button'
-
-interface ModeToggleProps extends ButtonProps {}
+interface ModeToggleProps extends React.HTMLAttributes<HTMLButtonElement> {}
 
 export function ModeToggle({ ...props }: ModeToggleProps) {
   const [theme, setThemeState] = React.useState<
@@ -20,9 +18,9 @@ export function ModeToggle({ ...props }: ModeToggleProps) {
 
   return (
     <button
-      className="px-1 hover:text-primary transition"
+      className="p-1 hover:text-primary transition"
       onClick={() => {
-        setThemeState('theme-light')
+        setThemeState(theme === 'theme-light' ? 'dark' : 'theme-light')
       }}
       {...props}
     >

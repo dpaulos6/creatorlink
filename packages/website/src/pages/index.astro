@@ -2,14 +2,15 @@
 import Layout from '@/layouts/Layout.astro'
 import { Hero } from '@/sections/hero'
 import { HowItWorks } from '@/sections/how-it-works'
-import { InteractiveJson } from '@/sections/interactive-json'
+import InteractiveJson from '@/sections/InteractiveJson.astro'
+import { TrustedBy } from '@/sections/trusted-by'
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="flex-1 flex flex-col gap-24 border-x container px-6">
-    <div class="h-40 w-full"/>
+  <main class="flex-1 flex flex-col gap-24 border-x container p-6 pt-52">
     <Hero/>
     <HowItWorks />
     <InteractiveJson />
+    <TrustedBy client:only="react" />
   </main>
 </Layout>

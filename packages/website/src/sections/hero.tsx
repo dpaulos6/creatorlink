@@ -16,9 +16,11 @@ export const Hero = ({ ...props }: HeroProps) => {
         Creatorlink provides a powerful JSON dataset for game developers and app
         creators to manage and reserve usernames across multiple platforms.
       </span>
-      <div className="space-x-4">
-        <Button>Get API Key</Button>
-        <Button variant="outline">View Docs</Button>
+      <div className="flex flex-wrap gap-4 items-center justify-center">
+        <Button className="px-8">Get API Key</Button>
+        <Button variant="outline" className="px-8">
+          View Docs
+        </Button>
       </div>
     </section>
   )
